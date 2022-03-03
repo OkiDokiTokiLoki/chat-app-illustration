@@ -31,7 +31,7 @@ body{
 }
 
 .mobile-container{
-    width: 275px;
+    width: 260px;
     height: 520px;
     background-color: #fff;
     padding: 10px;
@@ -70,6 +70,7 @@ body{
     align-items: center;
     justify-content: space-around;
     width: 65%;
+    margin-left: 5px;
 }
 
 .avatar{
@@ -110,9 +111,9 @@ body{
 
 .received{
     background-color: hsl(272, 41%, 93%);
-    max-width: 55%;
+    max-width: 52%;
     padding: 7px;
-    border-radius: 8px 8px 8px 2px;
+    border-radius: 12px 12px 12px 2px;
     color: var(--moderate-violet);
 }
 
@@ -135,10 +136,10 @@ body{
 
 .sent{
     background-color: #fff;
-    border-radius: 8px 8px 2px 8px;
+    border-radius: 12px 12px 2px 12px;
     padding: 7px;
     color: rgb(115, 112, 121);
-    max-width: 55%;
+    max-width: 52%;
 }
 
 .pricing{
@@ -150,7 +151,7 @@ body{
     color: #fff;
     margin-top: 10px;
     padding: 10px;
-    border-radius: 8px 8px 8px 2px;
+    border-radius: 12px 12px 12px 2px;
 }
 
 .pricing-details{
@@ -167,6 +168,7 @@ body{
 .amount{
     font-size: 14px;
     font-weight: 700;
+    margin-right: 5px;
 }
 
 .type-msg{
@@ -192,14 +194,16 @@ body{
     align-items: center;
     justify-content: center;
     background-color: var(--dark-violet);
-    width: 28px;
-    height: 28px;
+    width: 25px;
+    height: 25px;
     margin-right: 10px;
     border-radius: 50px;
 }
 
 .send-cta i{
     color: #fff;
+    font-size: 18px;
+    font-weight: 700;
 }
 
 .description{
@@ -210,19 +214,19 @@ h1{
     margin: 40px 0 20px 0;
     color: var(--dark-violet);
     font-weight: 500;
-    font-size: 40px;
+    font-size: 42px;
 }
 
 .description p{
     color: var(--grey-violet);
     font-size: 16px;
-    width: 72%;
+    width: 79%;
     margin: auto;
     line-height: 1.7em;
 }
 
 .purple-bg{
-    background-image: linear-gradient(to top left, var(--light-violet), var(--light-magenta));
+    background-image: linear-gradient(to top right, var(--light-violet), var(--light-magenta));
     border-radius: 0 0 500px 0;
     width: 50%;
     height: 470px;
@@ -231,4 +235,26 @@ h1{
     top: 0;
     left: 0;
     z-index: -1;
+}
+
+@media only screen and (min-width: 1000px){
+    body{
+        flex-direction: row;
+    }
+
+    .description{
+        margin-left: 100px;
+        text-align: left;
+    }
+
+    .description p{
+        width: 400px;
+    }
+
+    .purple-bg{
+        width: 36%;
+        border-radius: 0 0 300px 300px;
+        height: 750px;
+        left: -120px;
+    }
 }
