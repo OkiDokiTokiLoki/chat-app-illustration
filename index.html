@@ -5,30 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <script src="https://kit.fontawesome.com/1cc472638d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <title>Chat App Illustration</title>
 </head>
 <body>
     <div class="mobile-container">
-        <div class="chat-message">
-            <div class="contact-head">
-                <div class="camera"></div>
-                <div class="head">
-                    <div class="head-left">
-                        <i class="fa-solid fa-chevron-left"></i>
-                        <img src="./images/avatar.jpg" alt="avatar">
-                        <div class="contact">
-                            Samuel Green<br>
-                            <p>Available to Walk</p>
-                        </div>
-                    </div>
-                    <div class="head-right">
-                        <i class="fa-solid fa-ellipsis-vertical"></i>
+        <div class="contact-header">
+            <div class="camera"></div>
+            <div class="contact-details">
+                <div class="contact-left">
+                    <i class="material-icons">chevron_left</i>
+                    <img src="./images/avatar.jpg" alt="avatar" class="avatar">
+                    <div class="contact">
+                        <p class="contact-name">Samuel Green</p>
+                        <p>Available to Walk</p>
                     </div>
                 </div>
+                <i class="material-icons contact-right">more_vert</i>
             </div>
-            <div class="received-msg">That sounds great. I’d be happy with that.</div>
-            <div class="received-msg">Could you send over some pictures of your dog, please?</div>
+        </div>
+        <div class="chat-body">
+            <div class="received message">
+                <p>That sounds great. I’d be happy with that.</p>
+            </div>
+            <div class="received message">
+                <p>Could you send over some pictures of your dog, please?</p>
+            </div>
             <div class="right-align">
                 <div class="images">
                     <img src="./images/dog-image-1.jpg" alt="doggo-1">
@@ -37,31 +39,43 @@
                 </div>
             </div>
             <div class="right-align">
-                <div class="sent-msg">Here are a few pictures. She’s a happy girl!</div>
-                <div class="sent-msg">Can you make it?</div>
+                <div class="sent message">Here are a few pictures. She’s a happy girl!</div>
             </div>
-            <div class="received-msg">She looks so happy! The time we discussed works. How long shall I take her out for?</div>
+            <div class="right-align">
+                <div class="sent message">Can you make it?</div>
+            </div>
+            <div class="received message">She looks so happy! The time we discussed works. How long shall I take her out for?</div>
             <div class="pricing">
                 <div class="pricing-details">
-                    <i class="fa-solid fa-circle-notch"></i>
-                    30 minute walk
+                    <i class="material-icons">radio_button_unchecked</i>
+                    <p>30 minute walk</p>
                 </div>
                 <p class="amount">$29</p>
             </div>
             <div class="pricing">
                 <div class="pricing-details">
-                    <i class="fa-solid fa-circle-notch"></i>
-                    1 hour walk
+                    <i class="material-icons">radio_button_unchecked</i>
+                    <p>1 hour walk</p>
                 </div>
                 <p class="amount">$49</p>
             </div>
             <div class="type-msg">
                 <p>Type a message…</p>
                 <div class="send-cta">
-                    <i class="fa-solid fa-circle-chevron-right"></i>
+                    <i class="material-icons">chevron_right</i>
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- <div class="description">
+        <h1>Simple booking</h1>
+        <p>Stay in touch with our dog walkers through the chat interface. This makes it easy to 
+            discuss arrangements and make bookings. Once the walk has been completed you can rate 
+            your walker and book again all through the chat.</p>
+    </div>
+
+    <div class="purple-bg"></div>
+    <div class="grey-bg"></div> -->
 </body>
 </html>
